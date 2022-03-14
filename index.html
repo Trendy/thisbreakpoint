@@ -8,12 +8,6 @@
         color: #efefef;
       }
     </style>
-    <script>
-      function darkmode() {
-        const body = document.body;
-        body.classList.add("darkmode");
-      }
-    </script>
   </head>
   <body>
     <div style="text-align: center">
@@ -24,7 +18,28 @@
       Hoyet on Twitter (<a href="https://twitter.com/_hoyet">@_hoyet</a>).
     </div>
     <div style="text-align: center">
-      <button onclick="darkmode()">Enable Dark Mode</button>
+      <button>Enable Dark Mode</button>
     </div>
+
+    <script>
+      const lightmode = () => {
+        const body = document.body;
+        const button = document.querySelector("button");
+        button.innerText = "Enable Dark Mode";
+        button.onclick = darkmode;
+        body.classList.remove("darkmode");
+      };
+
+      const darkmode = () => {
+        const body = document.body;
+        const button = document.querySelector("button");
+        button.innerText = "Disable Dark Mode";
+        button.onclick = lightmode;
+        body.classList.add("darkmode");
+      };
+
+      const button = document.querySelector("button");
+      button.onclick = darkmode;
+    </script>
   </body>
 </html>
