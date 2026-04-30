@@ -16,7 +16,7 @@ body {
   margin: 0px auto;
   padding: 0px 0.75rem;
   font-size: calc(1rem * 1);
-  max-width: 41rem;
+  max-width: 50em;
 }
 
 .visually-hidden:not(:focus):not(:active) {
@@ -50,7 +50,7 @@ body {
 }
 
 a {
-  color: lighten(var(--white), 20%);
+  color: var(--light-red);
   text-decoration: none;
   text-underline-offset: 0.3rem;
 
@@ -64,6 +64,10 @@ a {
 }
 
 header {
+  a {
+    color: var(--white);
+  }
+
   h1 {
     color: var(--white);
     font-size: 3rem;
@@ -77,12 +81,15 @@ header {
       color: var(--cyan);
     }
   }
+
   div.header-container {
     padding: 2rem 0;
   }
 
+  .site-description {
+    color: var(--comment-grey);
+  }
   nav {
-    /* display: inline-block; */
     font-weight: 700;
 
     ul {
