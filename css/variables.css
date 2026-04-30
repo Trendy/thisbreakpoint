@@ -1,0 +1,33 @@
+/* roboto-mono-latin-wght-normal */
+@font-face {
+  font-family: Roboto Mono Variable;
+  font-style: normal;
+  font-display: swap;
+  font-weight: 100 700;
+  src: url(https://cdn.jsdelivr.net/fontsource/fonts/roboto-mono:vf@latest/latin-wght-normal.woff2)
+    format("woff2-variations");
+  unicode-range:
+    U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC,
+    U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212,
+    U+2215, U+FEFF, U+FFFD;
+}
+
+:root {
+  /* --black: oklab(0.26 0 0); */
+  --black: oklch(29.252% 0.0157 264.319);
+  --white: oklch(86.601% 0.02218 265.778);
+  --light-red: oklch(0.6709 0.1448 17);
+  --dark-red: oklch(0.572 0.1439 27.69);
+  --green: oklch(0.7683 0.1103 133);
+  --light-yellow: oklch(0.8249 0.097 82.26);
+  --dark-yellow: oklch(0.7273 0.0949 63.82);
+  --blue: oklch(73.042% 0.12136 245.323);
+  --magenta: oklch(0.6936 0.1635 318.21);
+  --cyan: oklch(72.314% 0.0916 206.363);
+  --gutter-grey: oklch(43.895% 0.02952 267.564);
+  --comment-grey: oklch(64.799% 0.02939 262.316);
+
+  --default-font:
+    "Roboto Mono Variable", monospace, "Helvetica Neue", Helvetica, Arial,
+    sans-serif;
+}
